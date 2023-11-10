@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="icon" href="assets/Libaas-dark.png">
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+
+  <div  class="cart">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-header">
+              <h3>Items in cart</h3>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                  <div class="image-cart">
+                    <img src="https://lp2.hm.com/hmgoepprod?set=quality[79],source[/73/ae/73aea44cdd558a9302bfdf922b65d3443b671578.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]" class="img-fluid"/>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+
+                  <h5>Women Linen <br>Shirt</h5>
+                  <p>$15</p>
+                  <button class="btn btn-dark"><i class="fa fa-trash"></i></button>
+                </div>
+                <div class="d-flex col-lg-4 col-md-12 col-12" style="height:5vh">
+                  <button class="btn btn-dark">
+                    <i class="fa fa-minus"></i>
+                  </button>
+                  <input type="number" class="form-control" />
+                  <button class="btn btn-dark">
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h3>Summary</h3>
+            </div>
+            <div class="card-body">
+                <p class="summary-body"><b>Cost</b><b>&#x20b9; 1000</b></p>
+
+              <hr/>
+              <p class="summary-body"><b>Total</b><b>&#x20b9; 1000</b></p>
+              <button class="btn btn-dark">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="footer"></div>
+
+
+  <script>
+    $(function () {
+      $('#header').load("commonpages/header.html");
+    });
+    $(function () {
+      $('#footer').load("commonpages/footer.html");
+    });
+
+  </script>
+</body>
+
+</html>

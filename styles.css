@@ -1,0 +1,244 @@
+/* declaring root variables */
+:root {
+  --backgroundcolor: #F6F6F6;
+  --darkmode: black;
+  --lightmode: white;
+  --header-color: blanchedalmond;
+}
+
+body {
+  background-color: var(--backgroundcolor);
+
+}
+/* navigation bar styling  */
+.navigation a {
+  text-decoration: none;
+  position: relative;
+  color: var(--darkmode);
+  font-weight: bold;
+  transition: color 0.5s ease;
+}
+
+.navigation a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--darkmode);
+  transition: 0.6s ease;
+}
+
+.navigation a:hover {
+  color: #0077b6;
+
+}
+
+.navigation a:hover::before {
+  width: 100%;
+}
+
+
+.nav-item {
+  padding: 5px;
+}
+
+nav {
+  background-color: var(--lightmode);
+
+}
+
+.navbar {
+  padding: 1rem 4rem;
+}
+
+
+
+/* cart button styling */
+.cart-btn:hover{
+  transform: translateY(-10px);
+
+}
+
+.cart-btn{
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* to make text appear on top of image  */
+.overlay-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* footer styling */
+footer a {
+  color: inherit;
+  /*to change */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--lightmode) !important;
+  padding-top: 50px;
+}
+
+/* corousel styling */
+
+#carousel-container {
+  width: 100vw;
+  padding: 2rem;
+}
+
+#carousel-container .image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-body a i {
+  color: var(--lightmode) !important;
+  font-weight: bold;
+}
+
+.card-body a {
+  outline: none;
+
+}
+
+.card {
+  text-align: center;
+}
+
+.card-col {
+  margin-bottom: 2rem;
+}
+
+/* media screens for responsive behavior */
+
+@media screen and (min-width: 1001px) {
+  #carousel-container .card-container {
+    display: flex;
+  }
+
+  #carousel-container .card {
+    margin: 2rem 1rem;
+    width: calc(100%/4) !important;
+  }
+
+  #carousel-container .image-container {
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  #carousel-container .card:nth-child(odd) {
+    display: none !important;
+  }
+
+  #carousel-container .card-container {
+    display: flex;
+  }
+
+  #carousel-container .card {
+    margin: 2rem 1rem;
+    width: calc(100%/2) !important;
+  }
+
+  #carousel-container .image-container {
+    height: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #featured-product {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #carousel-container .card:not(:first-child) {
+    display: none !important;
+  }
+
+  #carousel-container .image-container {
+    height: 65vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+/* contact */
+
+.contact-form form label,.login-form form label{
+  font-weight: bold;
+  font-size: larger;
+}
+.contact-form form input, textarea,.contact-form form input{
+  margin-bottom: 10px;
+}
+.contact-form form{
+  margin-top: 100px;
+}
+.button{
+  border-radius: 0.3rem;
+}
+.contact-form form, .login-form form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+/* login-form  */
+
+.login-form{
+  max-width: 30%;
+  height: 40vh;
+  margin-top: 10vh;
+  padding: 10px;
+}
+
+
+/* cart  */
+.cart{
+  padding: 50px;
+}
+.summary-body{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+
+/* darkmode  */
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+
+.dark-mode .nav-link {
+  color: #fff; /* Change the color of navigation links in dark mode */
+}
+
+
+.fa-moon {
+  color: var(--darkmode);
+}
+
+.fa-sun {
+  color: #FFD700; /* Yellow color for the sun icon */
+}
+

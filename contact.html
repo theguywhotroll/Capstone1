@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="icon" href="assets/Libaas-dark.png">
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+</head>
+
+<body>
+
+  <div id="header"></div>
+  <div class="container contact-form">
+    <h1 class="text-center pt-3" style="font-weight: bolder;">Contact Us</h1>
+
+    <div class="row pt-3">
+      <div class="col-lg-6 col-md-6 col-12">
+        <img src="https://beunbxd.com/wp-content/uploads/2023/05/Mobile-UX-pana-1-1536x1536.png" alt="img" class="img-fluid">
+      </div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <form>
+              <label>Name:</label>
+              <input type="text" class="form-control" placeholder="Enter your name" />
+              <label>E-mail:</label>
+              <input type="email" class="form-control" placeholder="Enter your E-mail" />
+              <label>Message:</label>
+              <textarea class="form-control" placeholder="Enter your message"></textarea>
+              <button class="button btn btn-dark mt-3">Submit</button>
+          </form>
+      </div>
+
+        </form>
+    </div>
+
+</div>
+
+  <div id="footer"></div>
+
+
+  <script>
+    $(function () {
+      $('#header').load("commonpages/header.html");
+    });
+    $(function () {
+      $('#footer').load("commonpages/footer.html");
+    });
+
+  </script>
+</body>
+
+</html>

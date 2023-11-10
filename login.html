@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="icon" href="assets/Libaas-dark.png">
+
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+</head>
+
+<body>
+
+  <div id="header"></div>
+  <h1 class="text-center pt-3" style="font-weight: bolder;">Login</h1>
+
+  <div class="container login-form">
+
+    <div class="row">
+      <form class="col-12">
+        <label>Username/Email:</label>
+        <input id="username" type="text" class="form-control" placeholder="Username" />
+        <label>Password:</label>
+        <input id="password" type="password" class="form-control" placeholder="Password" />
+        <button class="btn btn-dark mt-3" onclick="validation()">Submit</button>
+      </form>
+
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script type="text/javascript" src="script.js"></script>
+  <script>
+
+    $(function () {
+      $('#header').load("commonpages/header.html");
+    });
+    $(function () {
+      $('#footer').load("commonpages/footer.html");
+    });
+
+  </script>
+</body>
+
+</html>
